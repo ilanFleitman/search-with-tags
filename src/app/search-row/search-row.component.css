@@ -1,0 +1,37 @@
+#search-row {
+  width: 100%;
+  background-color: white;
+  border: solid 1px black;
+}
+
+
+
+#tags-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  cursor: text;
+}
+
+#tags-list li {
+  display: inline;
+  float: right !important;
+  text-align: center;
+}
+
+input {
+  white-space: nowrap;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;;
+}
+
+input :focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}

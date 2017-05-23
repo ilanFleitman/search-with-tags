@@ -1,0 +1,13 @@
+<div id="search-row">
+<ul id="tags-list" class="row" (click)="focusOn()">
+  <li>
+    <span class="glyphicon glyphicon-search"></span>
+  </li>
+  <li *ngFor="let tag of selectedTags" class="col-md-1">
+    <app-tag [tag]="tag"></app-tag>
+  </li>
+  <li class="col-md-1">
+    <input #focusoble type="text" [(ngModel)]="textValue" name="textValue" (keydown.enter)="addTag($event.target.value)" (keyup)="removeTag($event)">
+  </li>
+</ul>
+</div>
